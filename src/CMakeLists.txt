@@ -23,13 +23,18 @@
 
 
 add_library(nmea2000
-  N2kMsg.cpp
-  N2kStream.cpp
-  N2kMessages.cpp
-  Seasmart.cpp
+        N2kMsg.cpp
+        N2kStream.cpp
+        N2kMessages.cpp
+        Seasmart.cpp
+        NMEA2000_SocketCAN.cpp
+        NMEA2000.cpp
+        N2kGroupFunction.cpp
+        N2kGroupFunctionDefaultHandlers.cpp
+        N2kDeviceList.cpp
 )
 
 target_include_directories(nmea2000
-  PUBLIC
-  ${CMAKE_CURRENT_SOURCE_DIR}
+        PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}
 )
